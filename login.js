@@ -1,4 +1,4 @@
-const API = "https://api.github.com/repos/ユーザー名/リポ名/contents/data/users.json";
+const API = "https://github.com/shozukishoshozukisho/TaskApplication/users.json";
 const TOKEN = "GITHUB_TOKEN"; // ⚠公開しないこと
 
 async function loadUsers() {
@@ -65,3 +65,4 @@ async function register() {
   localStorage.setItem("user", id);
   location.href = "app.html";
 }
+
