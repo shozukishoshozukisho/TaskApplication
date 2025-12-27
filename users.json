@@ -1,0 +1,8 @@
+{
+  "users": {
+    "test": {
+      "password": "1234",
+      "tasks": []
+    }
+  }
+}
