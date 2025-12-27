@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h3>タスク追加</h3>
+<input id="newTask" placeholder="タスク名">
+<input id="newDate" type="date">
+<input id="newMemo" placeholder="メモ">
+<select id="newStatus">
+  <option>未完了</option>
+  <option>進行中</option>
+  <option>完了</option>
+  <option>見送り</option>
+</select>
+<button onclick="addTask()">追加</button>
+
+<h3>検索 / フィルター</h3>
+<input id="taskSearch" placeholder="タスク名検索" oninput="loadTasks()">
+<select id="statusFilter" onchange="loadTasks()">
+  <option value="all">すべて</option>
+  <option>未完了</option>
+  <option>進行中</option>
+  <option>完了</option>
+  <option>見送り</option>
+</select>
+
+<table border="1">
+<thead>
+<tr>
+<th>★</th><th>タスク</th><th>状態</th><th>日付</th><th>メモ</th><th>削除</th>
+</tr>
+</thead>
+<tbody id="tasks"></tbody>
+</table>
+
+<script src="main.js"></script>
+</body>
+</html>

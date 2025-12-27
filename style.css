@@ -1,0 +1,12 @@
+.status-未完了 { background:#fff3cd }
+.status-進行中 { background:#cce5ff }
+.status-完了   { background:#d4edda }
+.status-見送り { background:#f8d7da }
+
+.expired { background:#ffcccc !important; color:#900 }
+.near { background:#fff0b3; color:#856404 }
+
+.star { cursor:pointer; font-size:18px }
+.star.on { color:gold }
+
+td { padding:6px; }
